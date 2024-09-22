@@ -1,0 +1,8 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* Class for font family */
+
+
+.font-primary {
+  font-family: "Lexend", sans-serif;
+}
