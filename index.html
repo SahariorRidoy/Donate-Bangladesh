@@ -13,17 +13,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-primary">
-    <header>
-      <section class="pt-6 pb-16 bg-[#F9F7F3]">
+    <header class="sticky top-0 z-10">
+      <!-- Navbar Part Start -->
+      <section class="pt-6 pb-6 bg-[#F9F7F3]">
         <div class="navbar flex justify-between max-w-[1180px] mx-auto">
-          <div class="">
-            <button class="hidden md:block btn bg-[#B4F461] text-xl">
-              Blog
-            </button>
+          <div>
+            <button class="btn bg-[#B4F461] text-xl"><a href="blog.html">Blog</a></button>
           </div>
           <div class="text-xl font-bold lg:flex items-center gap-4">
             <img src="images/logo.png" alt="" />
-            <h2>Donate Bangladesh</h2>
+            <h2 class="hidden md:block">Donate Bangladesh</h2>
           </div>
           <div class="flex items-center gap-2">
             <img src="images/coin.png" alt="" />
@@ -35,23 +34,18 @@
     <main>
       <!-- Donation and History Button -->
       <section
-        class="flex justify-center gap-4 max-w-[1140px] pt-20 pb-8 mx-auto"
+        class="flex bg-white justify-center gap-4 max-w-[1140px] pt-20 pb-8 mx-auto sticky top-28 z-10"
       >
-        <button
-          class="btn bg-[#B4F461] font-bold hover:bg-[#B4F461] hover:border-none"
-        >
-          Donation
-        </button>
-        <button
-          class="btn bg-white border-2 hover:bg-[#B4F461] hover:border-none"
-        >
-          History
-        </button>
+        <button id="donation-button"
+          class="btn bg-[#B4F461] font-bold active:bg-[#B4F461] hover:border-none">
+          Donation</button>
+        <button id="history-button" class="btn bg-white active:bg-[#B4F461] border-2 ">History</button>
       </section>
-      <!-- Main Contents  -->
-      <section class="max-w-[1140px] mx-auto">
+      <!-- Donation Part Container -->
+      <section id="donation-container" class="max-w-[1140px] mx-auto">
+
         <!-- Noakhali Part-->
-        <section class="border rounded-xl p-8">
+        <section class="border rounded-xl p-8 mt-8 mx-4 lg:mx-0">
           <div class="card lg:card-side bg-base-100">
             <figure>
               <img src="images/noakhali.png" alt="Album" />
@@ -67,12 +61,7 @@
                 Donate for Flood at Noakhali, Bangladesh
               </h2>
               <p class="max-w-[520px] text-justify">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+                The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
               </p>
               <div class="py-4">
                 <input
@@ -88,9 +77,9 @@
             </div>
           </div>
         </section>
-        <!-- Feny Part -->
 
-        <section class="border rounded-xl p-8 mt-8">
+        <!-- Feny Part -->
+        <section class="border rounded-xl p-8 mt-8 mx-4 lg:mx-0">
           <div class="card lg:card-side bg-base-100">
             <figure>
               <img src="images/feni.png" alt="Album" />
@@ -103,9 +92,17 @@
                 <p><span>600</span> BDT</p>
               </div>
               <h2 class="card-title">
-                Donate for Flood at Noakhali, Bangladesh
+                Donate for Flood Relief in Feni,Bangladesh
               </h2>
-              <p class="max-w-[520px] text-justify">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+              <p class="max-w-[520px] text-justify">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
               </p>
               <div class="py-4">
                 <input
@@ -123,8 +120,7 @@
         </section>
 
         <!-- Quota Part -->
-
-        <section class="border rounded-xl p-8 mt-8">
+        <section class="border rounded-xl p-8 mt-8 mx-4 lg:mx-0">
           <div class="card lg:card-side bg-base-100">
             <figure>
               <img src="images/quota-protest.png" alt="Album" />
@@ -137,9 +133,18 @@
                 <p class="flex gap-2"><span>240000</span> BDT</p>
               </div>
               <h2 class="card-title">
-                Donate for Flood at Noakhali, Bangladesh
+                Aid for Injured in the Quota Movement
               </h2>
-              <p class="max-w-[520px] text-justify">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+              <p class="max-w-[520px] text-justify">
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
               </p>
               <div class="py-4">
                 <input
@@ -156,14 +161,19 @@
           </div>
         </section>
       </section>
+
+      <!-- History Part Container Default Hidden -->
+      <section id="history-container" class="max-w-[1140px] h-screen mx-auto mt-8 hidden">
+        <div class="border rounded-2xl mb-8 p-8 mx-4 lg:mx-0">
+          96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+        </div>
+      </section>
     </main>
 
-    <!-- Footer Color -->
-     <footer>
-        <section class="bg-[#F9F7F3] w-full min-h-[137px] mt-8">
-        </section>
-
-     </footer>
+    <!-- Footer Section Start -->
+    <footer>
+      <section class="bg-[#F9F7F3] w-full min-h-[137px] mt-8"></section>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
