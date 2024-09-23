@@ -1,4 +1,4 @@
-
+// Toggle Donation and History Button and change color by click
 const historyContainer= document.getElementById('history-container');
 const donationContainer= document.getElementById('donation-container');
 
