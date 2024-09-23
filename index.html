@@ -18,11 +18,12 @@
       <section class="pt-6 pb-6 bg-[#F9F7F3]/90 backdrop-blur-lg">
         <div class="navbar flex justify-between max-w-[1180px] mx-auto">
           <div>
-            <button class="btn bg-[#B4F461] text-xl"><a href="blog.html">Blog</a></button>
+            <button id="blog-button" class="btn bg-[#B4F461] text-xl"><a >Blog</a></button>
           </div>
           <div class="text-xl font-bold lg:flex items-center gap-4">
             <img src="images/logo.png" alt="" />
-            <h2 class="hidden md:block">Donate Bangladesh</h2>
+            <h2 id="home-button" class="hidden md:block"><button><a>Donate Bangladesh</a>
+            </button></h2>
           </div>
           <div class="flex items-center gap-2">
             <img src="images/coin.png" alt="" />
@@ -34,12 +35,17 @@
     <main>
       <!-- Donation and History Button -->
       <section
-        class="flex bg-white justify-center gap-4 max-w-[1140px] pt-20 pb-8 mx-auto sticky top-28 z-10 backdrop-blur-lg bg-white/30"
+        class="flex bg-white justify-center gap-4 max-w-[1140px] pt-20 pb-8 mx-auto sticky top-28 z-10 backdrop-blur-md bg-white/50"
       >
         <button id="donation-button"
           class="btn bg-[#B4F461] font-bold active:bg-[#B4F461] hover:border-none">
           Donation</button>
         <button id="history-button" class="btn bg-white active:bg-[#B4F461] border-2 ">History</button>
+      </section>
+
+      <!-- History Part Container Default Hidden -->
+      <section id="history-container" class="max-w-[1140px] h-screen mx-auto mt-8 hidden">
+        
       </section>
       <!-- Donation Part Container -->
       <section id="donation-container" class="max-w-[1140px] mx-auto">
@@ -218,10 +224,7 @@
 
 
 
-      <!-- History Part Container Default Hidden -->
-      <section id="history-container" class="max-w-[1140px] h-screen mx-auto mt-8 hidden">
-        
-      </section>
+      
     </main>
 
     <!-- Footer Section Start -->

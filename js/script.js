@@ -22,3 +22,11 @@ const donationButton= document.getElementById('donation-button').addEventListene
     historyBtnClass.classList.add('bg-white');
     historyBtnClass.classList.remove('bg-[#B4F461]');
 })
+
+// Blog Button Navigation
+const blogButton=document.getElementById('blog-button').addEventListener('click',function(){
+    window.location.href='blog.html';
+})
+const homeButtonBlog=document.getElementById('home-button').addEventListener('click',function(){
+    window.location.href='index.html';
+}) 
